@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add Restaurant</h1>
+    <form method="post" action="{% url 'add_restaurant' %}">
+         <lable for="name">Restaurant Name:</lable>
+         <input type ="text" id="name" name="name" required><br><br>
+
+         
+         <lable for="picture">Picture URL:</lable>
+         <input type ="url" id="picture" name="picture" ><br><br>
+         
+         
+         <lable for="cuisine">Cuisine:</lable>
+         <input type ="text" id="cuisine" name="cuisine" required><br><br>
+         
+         
+         <lable for="rating">Rating: </lable>
+         <input type ="number" id="rating" name="rating" step="0.1" min="0" max="5" required><br><br>
+
+         <button type="submit">Add Restaurant</button>
+    </form>
+</body>
+</html>
