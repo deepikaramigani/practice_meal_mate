@@ -10,6 +10,6 @@ class Customer(models.Model):
 
 class Restaurant(models.Model):
     name=models.CharField(max_length=20)
-    picture=models.URLField(max_length=200)
+    picture=models.URLField(max_length=500)
     cuisine=models.CharField(max_length=20)
     rating=models.FloatField()

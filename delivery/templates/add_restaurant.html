@@ -8,6 +8,7 @@
 <body>
     <h1>Add Restaurant</h1>
     <form method="post" action="{% url 'add_restaurant' %}">
+        {%csrf_token %}
          <lable for="name">Restaurant Name:</lable>
          <input type ="text" id="name" name="name" required><br><br>
 
